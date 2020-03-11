@@ -1,0 +1,31 @@
+name: 'Azure Cost action'
+inputs:
+  subscriptionId: 
+    description: 'Azure subscription id'
+    required: true
+  directoryId:
+    description: 'Azure directory id'
+    required: true
+  clientId:
+    description: 'Azure client id'
+    required: true
+  clientSecret:
+    description: 'Azure client secret'
+    required: true
+  includeTags: 
+    description: Tags that will be included in the output as key:value
+    required: false
+  disableIssue:
+    description: 'Disable Publish of results to issue'
+    required: false
+  githubToken:
+    description: 'Not required is disableIssue is set to true'
+    required: false
+outputs:
+  reportThisMonth: 
+    description: 'Report of this month'
+  reportPreviousMonth: 
+    description: 'Report of previous month'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
