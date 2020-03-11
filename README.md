@@ -45,7 +45,7 @@ jobs:
         directoryId: <Azure directory id> # Per step 3
         clientId: <Azure client id> # Per step 3
         clientSecret: ${{ secrets.azure_client_secret }} # Per step 10
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        githubToken: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 Run this action on every release, but skip posting results to issue. (Result are available as [output](https://help.github.com/en/actions/building-actions/metadata-syntax-for-github-actions#outputs))
@@ -88,7 +88,7 @@ jobs:
         directoryId: <Azure directory id> # Per step 3
         clientId: <Azure client id> # Per step 3
         clientSecret: ${{ secrets.azure_client_secret }} # Per step 10
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        githubToken: ${{ secrets.GITHUB_TOKEN }}
         includeTags: "team,owner"
 ```
 
