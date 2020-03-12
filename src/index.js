@@ -82,8 +82,8 @@ const postToIssue = async (currentPeriod, previousPeriod) => {
   const intro = `
 Total Azure costs in period ${currentPeriod.period}: **${costsThisMonth}** (${Math.round(costDifference)}% compared to last period).  
 Total Azure costs in period ${previousPeriod.period}: **${costsPreviousMonth}**.  
-Total Azure resources in period ${currentPeriod.period}: **${currentPeriod.totalNumberOfResources}**.   
-Total Azure Resources in period ${previousPeriod.period}: **${previousPeriod.totalNumberOfResources}**.  
+Total number of Azure resources in period ${currentPeriod.period}: **${currentPeriod.totalNumberOfResources}**.   
+Total number of Azure Resources in period ${previousPeriod.period}: **${previousPeriod.totalNumberOfResources}**.  
 `;
 
   const resourcesMarkdownTable = JSONtoMarkDown(currentPeriod.resources, Object.keys(currentPeriod.resources[0]));
