@@ -1,4 +1,4 @@
-name: 'Azure Cost action'
+name: 'Azure Cost report action'
 description: 'Generate a report for your Azure costs'
 inputs:
   subscriptionId: 
@@ -27,6 +27,8 @@ outputs:
     description: 'Report of this month'
   reportPreviousMonth: 
     description: 'Report of previous month'
+  issueNumber: 
+    description: 'GitHub issue number of report'
 runs:
   using: 'node12'
   main: 'dist/index.js'

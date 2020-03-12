@@ -96,12 +96,7 @@ Total Azure Resources in period ${previousPeriod.period}: **${previousPeriod.tot
     body: `${intro} ${resourcesMarkdownTable}`
   });
 
-  await octokit.issues.update({
-    owner,
-    repo,
-    issue_number: issue_response.number,
-    state: "closed"
-  });
+  core.setOutput("issueNumber", issue_response.number);
 };
 
 const getInput = name => {
