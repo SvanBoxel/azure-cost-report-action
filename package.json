@@ -13,7 +13,7 @@
     "@actions/github": "^2.1.1",
     "@azure/arm-billing": "^2.2.0",
     "@azure/arm-consumption": "^6.3.0",
-    "@azure/ms-rest-nodeauth": "^3.0.3",
+    "@azure/ms-rest-nodeauth": "^3.0.8",
     "json-to-markdown-table": "^1.0.0"
   }
 }
